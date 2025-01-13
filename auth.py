@@ -38,7 +38,7 @@ def register():
             db_session.rollback()
             return jsonify({"message":"Database error","error":str(e)}), 500
         except Exception as e:
-            return jsonify({"message":"An error occurred","error":str(e)})
+            return jsonify({"message":"An error occurred","error":str(e)}), 500
     return jsonify({"message":"Bad request"}),400
 
 #Login route
