@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    background: linear-gradient(30deg, #0b111a 0%, #0b111a 15%, #01275d 50%, rgb(67, 14, 79) 85%, #0b111a 100%);
+    -webkit-background: linear-gradient(30deg, #0b111a 0%, #0b111a 15%, #01275d 50%, rgb(67, 14, 79) 85%, #0b111a 100%); /* For Safari and Chrome */
+    -moz-background: linear-gradient(30deg, #0b111a 0%, #0b111a 15%, #01275d 50%, rgb(67, 14, 79) 85%, #0b111a 100%); /* For Firefox */
+    position : relative;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container{
+position : absolute;
+border : 2px solid black;
+top :0px;
+left : 5rem;
+display:flex;
+
+
+align-item:center;
+flex-wrap :wrap;
+height:10rem;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vertical-line {
+  border-left: 3px dashed white; /* Create the dotted line */
+  height: 100px; /* Set the height of the line */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.v-l-text {
+color : white;
+font-size: 20px;
+position : absolute;
+top : 6rem;
+left : 3.6rem;
+transform : rotate(270deg);
 }
 
-.card {
-  padding: 2em;
+.Home-nav {
+color:white;
+}
+.Home-nav-ul{
+list-style-type : disc;
+padding-left :6rem;
+}
+.Home-nav-ul-li{
+padding-top :20px;
 }
 
-.read-the-docs {
-  color: #888;
+.container-vertical-line{
+position:fixed;
+bottom :0px;
+left:5rem;
+}
+
+.vertical-line-bottom{
+ border-left: 3px solid white; /* Create the dotted line */
+  height: 100px;
+}
+
+.v-l-text-bottom{
+color:white;
+font-size: 20px;
+position : absolute;
+bottom:3rem;
+left:5.5rem;
+}
+
+.v-l-b-right{
+position:fixed;
+bottom :0px;
+right:5rem;
+}
+
+.vertical-line-bottom-right{
+ border-left: 3px solid white; /* Create the dotted line */
+  height: 100px;
+}
+
+.v-l-text-bottom-right{
+color:white;
+font-size:20px;
+position:absolute;
+bottom:3rem;
+right:5.5rem;
+}
+
+.explore{
+position:fixed;
+bottom:10px;
+right:45%;
+
 }
